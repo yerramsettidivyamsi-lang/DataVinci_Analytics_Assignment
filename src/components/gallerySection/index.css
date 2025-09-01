@@ -1,0 +1,68 @@
+.gallery_main_container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;    
+}
+
+.carousel_sec{
+    display: flex;
+    align-items: center;
+    padding: 8px 12px;
+}
+
+.main_prodct_img{
+    width: 75%;
+}
+
+.gallerry_btn{
+    outline: none;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.gallerry_btn_icon{
+    font-size: 30px;
+}
+
+.gallerry_sec{
+    display: none;
+    width: 100%;
+}
+ 
+
+@media screen and (min-width: 1024px) {
+    .gallery_main_container{
+        width: 100%;
+        padding-left: 50px;
+    }
+
+    .gallerry_sec{
+        display: grid;
+        grid-template-columns: 50% 50%; 
+        grid-template-rows: auto;
+        grid-template-areas: 
+            "child1 child2"
+            "child3 child3"
+            "child4 child5"
+            "child6 child7";
+        gap: 10px;
+        margin: 0 auto;
+    }
+    
+    .gallerry_sec img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+
+    .gallerry_sec img:nth-child(1) { grid-area: child1; }
+    .gallerry_sec img:nth-child(2) { grid-area: child2; }
+    .gallerry_sec img:nth-child(3) { grid-area: child3; }
+    .gallerry_sec img:nth-child(4) { grid-area: child4; }
+    .gallerry_sec img:nth-child(5) { grid-area: child5; }
+    .gallerry_sec img:nth-child(6) { grid-area: child6; }
+    .gallerry_sec img:nth-child(7) { grid-area: child7; }
+}

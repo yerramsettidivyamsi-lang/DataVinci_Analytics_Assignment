@@ -1,0 +1,330 @@
+.content_sec{
+    padding: 10px 10px 10px 20px;
+}
+
+.heading_container{
+    font-family: sans-serif;
+}
+
+.heading_container h1{
+    width: 100px;
+    font-size: 40px;
+    font-weight: 300;
+}
+
+.heading_container p{
+    font-size: 32px;
+    color: rgb(58, 57, 57);
+}
+
+.heading_container p sup{
+    font-size: 12px; 
+    vertical-align: super; 
+    margin-left: 2px;
+    color: rgb(58, 57, 57);
+}
+
+.info_popup_btn{
+    outline: none;
+    border: none;
+    background-color: rgb(233, 221, 207);
+    border-radius: 18px;
+    padding: 12px 18px;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.info_popup_btn img{
+    margin-right: 12px;
+}
+
+.ratings_container{
+    display: flex;
+    align-items: center;
+    padding: 12px 8px;
+}
+
+.ratings_container img{
+    margin-right: 2px;
+}
+
+.ratings_container p{
+    margin-left: 16px;
+    color: rgb(87, 85, 83);
+}
+
+.description{
+    padding-top: 12px;
+    font-size: 14px;
+}
+
+.product_type{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+    padding-top: 12px;
+    padding-left: 12px;
+}
+
+.product_type p{
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(55, 52, 52);
+}
+
+.certificatioins_container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 12px;
+}
+
+.certificatioins_container img{
+    width: 50px;
+    margin-right: 12px;
+}
+
+.variants_container{
+    padding-top: 20px;
+    font-family: sans-serif;
+}
+
+.variants_container p:nth-child(1) {
+    font-size: 14px;
+    font-weight: 300;
+    color: gray;
+}
+
+.variants_container p:nth-child(2) {
+    font-size: 20px;
+    padding-top: 12px;
+}
+
+.variant_btns_container{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    gap: 20px;
+}
+
+.variant_btns_container button{
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+
+.variant_btns_container button img{
+    width: 80px;
+}
+
+.payment_container{
+    margin-top: 12px;
+    margin-left: -10px;
+    padding: 20px;
+    background-color: rgb(233, 234, 236);
+    border-radius: 20px;
+}
+
+.payment_container p:nth-child(1){
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(66, 63, 63);
+}
+
+.payment_container div{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.payment_container div button{
+    display: flex;
+    align-items: center;
+    outline: none;
+    border: 2px solid orange;
+    background-color: transparent;
+    justify-content: space-around;
+    border-radius: 30px;
+    padding: 8px 16px;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.payment_container div button:hover{
+    background-color: orange;
+    color: white;
+}
+
+.payment_container div button:active{
+    background-color: orange;
+    color: white;
+}
+
+.payment_container button{
+    outline: none;
+    border: none;
+    padding-top: 10px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 12px;
+    color: rgb(84, 80, 80);
+}
+
+.quantity_main_container{
+    padding-top: 20px;
+    font-size: 14px;
+    color: #363131;
+    font-weight: 500;
+    font-family: sans-serif;
+}
+
+.quantity_sub_container{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.quantity_container{
+    background-color: orange;
+    border-radius: 20px;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    padding: 12px 20px;
+    font-size: 20px;
+    justify-content: space-around;
+}
+
+.quantity_container button{
+    outline: none;
+    border: none;
+    font-size: 20px;
+    background-color: transparent;
+    font-weight: 600;
+}
+
+.decreament_btn{
+    justify-self: flex-start;
+}
+
+.increament_btn{
+    justify-self: flex-end;
+}
+
+.add_cart_btn{
+    outline: none;
+    font-size: 20px;
+    border-radius: 20px;
+    padding: 12px 16px;
+    background-color: #2b5678;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 500;
+    width: 80%;
+}
+
+.add_cart_btn:active{
+    scale: 0.9;
+}
+
+.bundle_container{
+    display: none;
+}
+
+
+@media screen and (min-width: 1024px) {
+    .content_sec{
+        padding: 20px 20px 20px 50px;
+    }
+
+    .product_type{
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .certificatioins_container img{
+        width: 70px;
+    }
+
+    .variant_btns_container button img{
+        width: 160px;
+    }
+
+    .description{
+        width: 80%;
+        font-size: 18px;
+    }
+
+    .payment_container p:nth-child(1){
+        font-size: 20px;
+        font-weight: 400;
+    }
+
+    .payment_container div{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .payment_container div button{
+        padding: 18px 20px;
+        font-size: 18px;
+        gap: 40px;
+        border-radius: 50px;
+    }
+
+    .payment_container button{
+        font-size: 18px;
+    }
+
+    .quantity_main_container{
+        padding-top: 30px;
+        font-size: 20px;
+    }
+    
+    .quantity_sub_container{
+        flex-direction: row;
+    }
+
+    .quantity_container{
+        width: 40%;
+    }
+
+    .bundle_container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 300px;
+        border-radius: 20px;
+        background-color: rgb(221, 223, 223);
+        padding-top: 26px;
+    }
+
+    .bundle_container div:nth-child(1){
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-around;
+        font-size: 26px;
+        gap: 30px;
+    }
+    
+    .bundle_container div:nth-child(1) button{
+        outline: none;
+        border: none;
+        font-size: 30px;
+        background-color: transparent;
+        justify-self: flex-end;
+    }
+}

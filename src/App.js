@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css"
+import { useContext, useState } from "react";
+import MainSection from "./components/mainSection";
+import Navbar from "./components/navbar";
+import SideBar from "./components/sideBar";
+import { AppContext, AppContextProvider } from "./AppContext/appContext";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+function App() {  
+    const {isOpen, toogleIsOpen} = useContext(AppContext)
+  return(
+      <div className="main_app_bg_container">
+        <Navbar/>
+        <SideBar isOpen = {isOpen} toogleIsOpen = {toogleIsOpen} />
+        <MainSection/>
+      </div>
+  )
+   
 }
 
 export default App;
