@@ -2,7 +2,6 @@ import { useContext, useState } from "react";
 import "./index.css"
 
 import { RiMenuFold2Line, RiMenuFoldLine } from "react-icons/ri";
-import SideBar from "../sideBar";
 import { AppContext } from './../../AppContext/appContext';
 import { Link } from "react-router-dom";
 

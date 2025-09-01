@@ -92,6 +92,7 @@ const COntentSection = () => {
             <button className="info_popup_btn">
                 <img
                 src="https://res.cloudinary.com/dxaugnoxj/image/upload/v1756661714/samples/info_rimsum.png"
+                alt="info-icon"
                 />
                 <p>
                     What is UMF and MGO?

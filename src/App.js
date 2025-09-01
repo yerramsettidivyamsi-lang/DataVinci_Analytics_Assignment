@@ -1,9 +1,9 @@
 import "./App.css"
-import { useContext, useState } from "react";
+import { useContext } from "react";
 import MainSection from "./components/mainSection";
 import Navbar from "./components/navbar";
 import SideBar from "./components/sideBar";
-import { AppContext, AppContextProvider } from "./AppContext/appContext";
+import { AppContext} from "./AppContext/appContext";
 
 
 function App() {  
